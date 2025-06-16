@@ -105,10 +105,8 @@ while True:
                     break
                 else:
                     img = preprocess_image(path)
-                    print(img.shape)
                     prediction = model.predict(img)
                     predicted_class = np.argmax(prediction)
-                    print(predicted_class)
                     print("")
                     print("")
                     print("---------------------------------------------")
